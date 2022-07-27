@@ -1,0 +1,78 @@
+.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.portfolio__item {
+    background: var(--color-primary);
+    padding: 1rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    align-content: center;
+}
+
+.portfolio__item:hover {
+    border-color: var(--color-primary);
+    background: transparent;
+}
+
+.portfolio__item-image {
+    border-radius: 1.5rem;
+    border: 1px solid black;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+}
+
+.portfolio__item h3 {
+    margin: 1.2rem 0 1.2rem;
+}
+
+.portfolio__item h5 {
+    text-indent: 50px;
+}
+
+.portfolio__item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.2rem;
+    margin-bottom: -0.5rem;
+    justify-content: center;
+}
+
+#github {
+    background: black !important;
+    transition: var(--transition);
+}
+
+.portfolio__item:hover #github {
+    background: var(--color-primary-varient) !important;
+    color: var(--color-white);
+}
+
+#github:hover {
+    font-size: 1.1rem;
+}
+
+
+
+/* =========================== Media Queries (Medium) =========================== */
+@media screen and (max-width: 1024px) {
+    .portfolio__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+ }
+ 
+ /* =========================== Media Queries (Small) =========================== */
+ @media screen and (max-width: 600px) {
+     .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+     }
+ }
+
+
