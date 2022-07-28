@@ -3,7 +3,7 @@ import './contact.css'
 import {MdEmail} from 'react-icons/md'
 import {BsWhatsapp} from 'react-icons/bs'
 import { useRef } from 'react';
-import emailjs, { sendForm } from 'emailjs-com';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
 
@@ -11,7 +11,7 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-      console.log('123',form);
+
     emailjs.sendForm("service_g8xvs6q", "template_j66b6x3", form.current, "OCJxnizNSPVkq72Md")
 
       e.target.reset()
