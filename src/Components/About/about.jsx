@@ -45,7 +45,7 @@ const About = () => {
         Information Technology.
         </p>
 
-        <a href='#contact' className='btn'>Talk to me</a>
+        <a href='#contact' className='btn'>Message Me</a>
         </div>
       </div>
     </section>
